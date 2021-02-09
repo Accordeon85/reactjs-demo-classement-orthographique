@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reactjs-demo-classement-orthographique/static/css/main.8472da94.chunk.css",
+    "main.js": "/reactjs-demo-classement-orthographique/static/js/main.b019142d.chunk.js",
+    "main.js.map": "/reactjs-demo-classement-orthographique/static/js/main.b019142d.chunk.js.map",
+    "runtime-main.js": "/reactjs-demo-classement-orthographique/static/js/runtime-main.246da136.js",
+    "runtime-main.js.map": "/reactjs-demo-classement-orthographique/static/js/runtime-main.246da136.js.map",
+    "static/css/2.fe708519.chunk.css": "/reactjs-demo-classement-orthographique/static/css/2.fe708519.chunk.css",
+    "static/js/2.a1f78537.chunk.js": "/reactjs-demo-classement-orthographique/static/js/2.a1f78537.chunk.js",
+    "static/js/2.a1f78537.chunk.js.map": "/reactjs-demo-classement-orthographique/static/js/2.a1f78537.chunk.js.map",
+    "static/js/3.0174947d.chunk.js": "/reactjs-demo-classement-orthographique/static/js/3.0174947d.chunk.js",
+    "static/js/3.0174947d.chunk.js.map": "/reactjs-demo-classement-orthographique/static/js/3.0174947d.chunk.js.map",
+    "index.html": "/reactjs-demo-classement-orthographique/index.html",
+    "static/css/2.fe708519.chunk.css.map": "/reactjs-demo-classement-orthographique/static/css/2.fe708519.chunk.css.map",
+    "static/css/main.8472da94.chunk.css.map": "/reactjs-demo-classement-orthographique/static/css/main.8472da94.chunk.css.map",
+    "static/js/2.a1f78537.chunk.js.LICENSE.txt": "/reactjs-demo-classement-orthographique/static/js/2.a1f78537.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.246da136.js",
+    "static/css/2.fe708519.chunk.css",
+    "static/js/2.a1f78537.chunk.js",
+    "static/css/main.8472da94.chunk.css",
+    "static/js/main.b019142d.chunk.js"
+  ]
+}
