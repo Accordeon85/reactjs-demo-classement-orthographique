@@ -1,38 +1,236 @@
 .App {
-  text-align: center;
+  --highlight: #1a1ac4;
+  --mainTextColor: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 460px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  body { 
+    font-size: 0.75em;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (max-width: 600px) {
+
+  .externalContent, .rmq {
+    padding-left: 0.5em;
+    font-size: 0.7em;
+  }
+
+  .syllableControl {
+    max-width: 70%;
+    flex: 2;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px){
+
+  .externalContent, .rmq {
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 0.75em;
+  }
+
+  .separator {
+    border-right: white 1px solid;
+    margin-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .leftMenu {
+    width: 100%;
+    background-color: rgb(71, 71, 119);
+    color: var(--mainTextColor);
+    text-align: left;
+    padding-left: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+  }
+
+  .labelTitle {
+    padding-right: 0.5em;
+  }
+
+  .Dropdown-control.dropdown {
+    padding-right: 0.8em;
+    min-width: 10em;
+  }
+
+  .syllableControl {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (min-width: 901px) {
+
+  .leftMenu {
+    width: 15%;
+    background-color: rgb(71, 71, 119);
+    color: var(--mainTextColor);
+    height:100%;
+    position: fixed;
+    text-align: left;
+    padding-left: 1em;
+  }
+  .wordBoard {
+    padding-left: 15%;
+  }
+
+  .separator + .labelTitle {
+    margin-top: 0.5em;
+  }
+
+  .rmq {
+    font-size: 0.75em;
+  }
+
+}
+
+.labelTitle {
+  color: var(--mainTextColor);
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+}
+
+.Dropdown-root {
+  padding-right: 0.8em;
+}
+
+.Dropdown-control.dropdown {
+  border-radius: 3px;
+  border-color: #abcdef;
+  background-color: #252421;
+  color:var(--mainTextColor);
+}
+
+.Dropdown-root .Dropdown-menu {
+  padding-right:inherit;
+  
+}
+
+
+.Dropdown-root .Dropdown-menu, .Dropdown-menu .Dropdown-option, .Dropdown-menu .Dropdown-option.is-selected, .Dropdown-menu .Dropdown-option:hover {
+  border-radius: 3px;
+  border-color: #abcdef;
+  background-color: #252421;
+  color:var(--mainTextColor);
+  width: 94%;
+}
+
+.legend {
+  color: var(--mainTextColor);
+  padding-top: 0.2em;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.legendElement {
+  padding-right: 5%;
+}
+
+.legendSyllable {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.properName {
+  color: orchid;
+}
+
+.mainFlex {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.word {
+  padding-right: 15%;
+}
+
+.gridBlockList {
+  justify-content: space-evenly;
+  justify-items: start;
+  padding: 2%;
+}
+
+.gridWordsBlock {
+  margin-top: 1%;
+  background-color: #252421;
+  color: var(--mainTextColor);
+  width:45%;
+  height: 45%;
+  min-height: 20em;
+  text-align: left;
+  overflow-x: scroll;
+}
+
+.gridWordsBlock.MuiGrid-item.MuiGrid-grid-xs-6 {
+  max-width: 48%;
+  border-radius: 4px;
+  margin-bottom: 1%;
+}
+
+.wordsList {
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  max-height: 15em;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+.wordBoard {
+  background-color: #161614;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hightlight {
+  background-color: var(--highlight);
+  border-radius: 2px;
+}
+
+/* old */
+
+.wordsBlock {
+  margin-top: 1%;
+  background-color: #252421;
+  color: var(--mainTextColor);
+  width:45%;
+  height: 45%;
+  min-height: 17em;
+  border: 2px solid #252421;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.wordsBlockList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  justify-items: start;
+}
+
+.rmq {
+  font-style: italic;
+  opacity: 0.7;
+  padding-top: 0.8em;
+}
+
+a {
+  color: #ababff;
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  font-style: italic;
 }
